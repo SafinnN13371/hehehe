@@ -1,0 +1,193 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	/*убираем все отступы у всех тегов*/
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	/*box-sizing: border-box; - меняет подсчет ширины блока так чтобы нам было удобнее верстать*/
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+	/*убираем линии обводки у некоторых браузерах*/
+}
+
+nav,
+header,
+footer,
+aside {
+	display: block;
+	/*добовляем значение блок что делает их блочными*/
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	/*параметры которые уравнивают поведение шрифтов и элиментов 
+	для разны браузерах в том числе запрещают 
+	увелечение шрифта самовльное на айфонах*/
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+15,0+100 */
+	background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 0) 100%);
+	/* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 0) 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 0) 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=1);
+	/* IE6-9 fallback on horizontal gradient */
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+	/*делаем так чтобы они наследовали шрифт*/
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-ms-clear {
+	display: none;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+/*.one {
+	cursor: pointer;
+}
+
+.tri {
+	display: none;
+	margin-right: 1500px;
+}
+
+.two:active+.tri {
+
+	display: block;
+}
+
+
+.chet {
+	display: none;
+}*/
+body {
+	padding: 15px;
+	background-color: rgb(203, 203, 203);
+}
+
+.container {
+	width: 100%;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.check {
+	border: 1px solid rgb(6, 190, 113);
+	box-shadow: 0px 0px 5px rgb(6, 190, 113);
+	width: 100%;
+	line-height: 1.5;
+	padding: 6px;
+	align-items: center;
+}
+
+.massege {
+	opacity: 0;
+	display: inline-block;
+	color: #555;
+	border: 2px solid rgb(6, 190, 113);
+	border-radius: 19px 19px 19px 19px;
+	padding: 2px 5px 2px 5px;
+	transition: opacity .3s linear;
+
+}
+
+.one:hover+.massege {
+	opacity: 1;
+}
+
+.one {
+	display: inline-block;
+	font-size: 22px;
+	color: rgb(6, 190, 113);
+	padding-left: 148px;
+	text-align: center;
+	font-family: 'Playfair Display',
+		serif;
+	cursor: pointer;
+}
+
+.two {
+	padding: 10px;
+	font-family: 'Playfair Display',
+		serif;
+	font-size: 16px;
+	cursor: pointer;
+	color: #000;
+
+}
+
+.shest {
+	padding: 10px;
+	font-family: 'Playfair Display',
+		serif;
+	cursor: pointer;
+}
+
+.shest:hover {
+	margin-left: 320px;
+	cursor: none;
+}
+
+.shest:active {
+	margin-left: 320px;
+	cursor: none;
+}
+
+
+.center {
+	display: flex;
+	justify-content: space-around;
+}

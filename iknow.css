@@ -1,0 +1,22 @@
+.container {
+	width: 100%;
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+.check {
+	border: 1px solid rgb(6, 190, 113);
+	box-shadow: 0px 0px 5px rgb(6, 190, 113);
+	width: 100%;
+	line-height: 1.5;
+	padding: 6px;
+	align-items: center;
+}
+
+.one1337 {
+	font-family: 'Playfair Display',
+		serif;
+	font-size: 22px;
+	padding: 20px;
+	text-align: center;
+}
